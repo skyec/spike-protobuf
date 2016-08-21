@@ -3,8 +3,7 @@ package event;
 import "google/protobuf/any.proto";
 
 message Event {
-	int32 id = 1; // unique ID for this event
-  google.protobuf.Any payload = 2;	
+  google.protobuf.Any payload = 1;
 }
 
 message EventThingStarted {
