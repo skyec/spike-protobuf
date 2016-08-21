@@ -36,7 +36,7 @@ RUN git config --global credential.helper 'cache --timeout=86400'
 
 ENV GOPATH /go
 ENV GOBIN /go/bin
-ENV PATH /usr/local/go/bin:/go/bin:/installs/go_appengine:$PATH
+ENV PATH /usr/local/go/bin:/go/bin:$PATH
 ENV HOME /root
 WORKDIR /go/src
 
@@ -50,7 +50,8 @@ RUN mkdir /pbuff \
   && curl -LO https://github.com/google/protobuf/releases/download/v3.0.0/protoc-3.0.0-linux-x86_64.zip \
   && unzip -d /pbuff protoc-3.0.0-linux-x86_64.zip \
   && go get -u github.com/golang/protobuf/proto \
-  && go get -u github.com/golang/protobuf/protoc-gen-go
+  && go get -u github.com/golang/protobuf/protoc-gen-go \
+  && go get -u github.com/tools/godep
 
 ENV PATH /pbuff/bin:$PATH
 
