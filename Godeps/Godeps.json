@@ -2,6 +2,9 @@
 	"ImportPath": "github.com/skyec/spike-protobuf",
 	"GoVersion": "go1.7",
 	"GodepVersion": "v74",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/davecgh/go-spew/spew",
@@ -13,7 +16,19 @@
 			"Rev": "f592bd283e9ef86337a432eb50e592278c3d534d"
 		},
 		{
+			"ImportPath": "github.com/golang/protobuf/ptypes",
+			"Rev": "f592bd283e9ef86337a432eb50e592278c3d534d"
+		},
+		{
 			"ImportPath": "github.com/golang/protobuf/ptypes/any",
+			"Rev": "f592bd283e9ef86337a432eb50e592278c3d534d"
+		},
+		{
+			"ImportPath": "github.com/golang/protobuf/ptypes/duration",
+			"Rev": "f592bd283e9ef86337a432eb50e592278c3d534d"
+		},
+		{
+			"ImportPath": "github.com/golang/protobuf/ptypes/timestamp",
 			"Rev": "f592bd283e9ef86337a432eb50e592278c3d534d"
 		},
 		{
